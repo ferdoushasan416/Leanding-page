@@ -1,0 +1,807 @@
+:root {
+  --primary: #FF9800;
+  --secondery: #2B2B2B;
+  --black: #000000;
+  --text-white: #fff;
+  --btn-color: #0F1B24;
+  --footer-bg-color: #0F1B24;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/*
+===============================
+Global CSS START
+===============================
+*/
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  background: var(--body-bg-color);
+  letter-spacing: 0.01em;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out 0s;
+  display: block;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: var(--secondery);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: normal;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h4,
+h5 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.8125rem; /* 45px */
+}
+
+h2 {
+  font-size: 2.5rem; /* 28px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+}
+
+h5 {
+  font-size: 1.125rem; /* 18px */
+}
+
+@media screen and (min-width: 991px) {
+h1 {
+    font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+    font-size: 2.1875rem; /* 35px */
+}
+
+h3 {
+    font-size: 1.875rem; /* 30px */
+ }
+
+h4 {
+    font-size: 1.5rem; /* 24px */
+ }
+
+h5 {
+    font-size: 1.25rem; /* 20px */
+
+  }
+}
+
+@media screen and (min-width: 1360px) {
+h1 {
+    font-size: 4.0625rem; /* 65px */
+}
+
+h2 {
+    font-size: 2.5rem; /* 40px */
+}
+
+h3 {
+    font-size: 2.1875rem; /* 35px */
+}
+
+ h4 {
+    font-size: 1.875rem; /* 30px */
+}
+
+h5 {
+    font-size: 1.5625rem; /* 25px */
+}
+
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*----- button style ------*/
+
+.site-btn {
+  background-color: var(--primary);
+  color: var(--btn-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 18px 40px;
+  text-align: center;
+  transition: 0.3s all ease;
+  border-radius: 30px;
+}
+
+.site-btn:hover {
+  color: var(--text-white);
+  background-color: var(--secondery);
+}
+
+/*----- button style end ------*/
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto;
+}
+
+#page {
+  overflow: hidden;
+}
+
+.shade {
+  position: absolute;
+  z-index: -1;
+}
+
+.shade-1 {
+  top: 50%;
+  left: -4%;
+  transform: translateY(-50%);
+}
+
+.shade-2 {
+	right: 0;
+	bottom: 0;
+}
+
+.shade-3 {
+	left: 26%;
+	top: 50%;
+	transition: ;
+	transform: translateY(-50%);
+}
+
+.shade-sm-1 {
+	left: 2%;
+	bottom: 70px;
+}
+
+.shade-sm-2 {
+  right: 0;
+  top: 24%;
+}
+
+.shade-sm-3 {
+	right: 30px;
+	bottom: 40px;
+}
+
+.section-title h2 {
+  line-height: 3.4375rem;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.section-title p span {
+	background-color: #FFD699;
+	padding: 4px;
+}
+
+/*
+============================
+Global CSS END
+============================
+*/
+
+/*
+============================
+Header Section Start
+============================
+*/
+
+.main-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-menu ul .current-menu-item {
+	position: relative;
+	display: inline-block;
+	margin: 0 30px;
+}
+
+.main-menu ul .current-menu-item a {
+	display: block;
+	font-weight: 500;
+  padding: 5px 0px;
+	font-size: 1.125rem;
+  color: var(--secondary);
+	transition: 0.3s all ease;
+  position: relative;
+}
+
+.main-menu ul .current-menu-item a:before {
+  position: absolute;
+  content: "";
+  background-color: var(--secondary);
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  left: 0;
+  transition: 0.3s all ease;
+}
+
+.main-menu ul .current-menu-item:hover a:before {
+  width: 100%;
+}
+
+.main-menu ul .current-menu-item:hover a {
+  color: var(--secondary);
+}
+
+/*
+============================
+Header Section End
+============================
+*/
+
+
+/*
+============================
+Banner Section Start
+============================
+*/
+
+.banner-bg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: var(--secondary);
+  padding-top: 180px;
+	padding-bottom: 350px;
+  
+}
+
+.banner-text {
+  max-width: 797px;
+}
+
+.banner-text h1 {
+  color: var(--text-white);
+  line-height: 5.9375rem;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  color: var(--text-white);
+  font-size: 1.375rem;
+  line-height: 33.31px;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  max-width: 553px;
+}
+
+.banner-btn a:hover {
+	color: var(--primary);
+  background-color: var(--text-white);
+}
+
+/*
+============================
+Banner Section End
+============================
+*/
+
+/*
+============================
+Now Working Section Start
+============================
+*/
+
+.now-working-area {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.now-working-area .section-title {
+  max-width: 685px;
+}
+
+.portfolio-figure img {
+	margin: 0 auto;
+}
+
+/*
+============================
+Now Working Section End
+============================
+*/
+
+/*
+============================
+Investment Section Start
+============================
+*/
+
+.investment-area {
+  background-color: var(--secondery);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.investment-wrap {
+  color: var(--text-white);
+  margin-top: 55px;
+}
+
+.investment-wrap h2 {
+  /* width: 437px; */
+  line-height: 3.4375rem;
+  margin-bottom: 24px;
+}
+
+.investment-wrap h2, .invest-list li {
+  padding-left: 20px;
+}
+
+.invest-list {
+  max-width: 465px;
+}
+
+.invest-list li {
+	margin-bottom: 24px;
+	letter-spacing: 0.3px;
+	font-size: 1rem;
+	line-height: 1.5;
+  position: relative;
+}
+
+.invest-list li::before {
+	content: "";
+	top: 50%;
+	left: 0;
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: var(--primary);
+	transform: translateY(-50%);
+}
+
+/*
+============================
+Investment Section End
+============================
+*/
+
+
+/*
+================================
+Investing Demand Section Start
+================================
+*/
+
+.investing-on-demand-area {
+  padding-top: 64px;
+  padding-bottom: 88px;
+}
+
+.investing-service-wrap {
+	margin-top: 40px;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  background-color: var(--primary);
+  padding: 2px 15px 0px 4px;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.service-box {
+  border: 2px solid var(--primary);
+  border-radius: 16px;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+}
+
+.service-box img {
+  margin: 0 auto;
+  margin-bottom: 4px;
+}
+
+.service-box span {
+  font-size: 0.875rem;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+.service-box span b {
+	display: block;
+}
+/*
+================================
+Investing Demand Section End
+================================
+*/
+
+/*
+==========================
+OneUp Edge Section Start
+==========================
+*/
+
+.oneup-edge-area {
+  padding-bottom: 210px;
+}
+
+.invest-content-wrap {
+  gap: 10px;
+	margin-top: 40px;
+  margin-bottom: 60px;
+	padding: 24px 38px;
+  border-radius: 5px;
+  position: relative;
+  transition: 0.3s all ease;
+}
+
+.invest-content-wrap:hover.invest-content-wrap {
+  color: #B24D00;
+  background-color: #FFF5E6;
+}
+
+.invest-content-wrap:hover.invest-content-wrap span {
+  color: #B24D00;
+}
+
+.invest-content-wrap:hover.invest-content-wrap:before {
+  background-color: var(--primary);
+}
+
+.invest-content-wrap:before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #F6F6F6;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.invest-content-wrap span {
+  font-size: 0.875rem;
+  color: #979797;
+  letter-spacing: 0.01em;
+}
+
+.invest-content-wrap h4 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+/*
+==========================
+OneUp Edge Section End
+==========================
+*/
+
+/*
+==============================
+Join Investors Section Start
+=============================
+*/
+
+.join-investors-area {
+  padding-bottom: 127px;
+  position: relative;
+}
+
+.join-investors-area .section-title {
+	max-width: 587px;
+}
+
+.slider-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.slider-info span {
+  font-size: 0.9375rem;
+  display: block;
+  line-height: 1.3125rem;
+}
+
+.slider-items {
+  background-color: var(--text-white);
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+.slider-items p {
+	padding-left: 54px;
+	color: var(--black);
+	margin: 0;
+}
+
+.join-investors-area .shade-wrapper img:first-child {
+	top: 25%;
+	left: -60px;
+}
+
+.slider-wrapper {
+	background-color: var(--secondery);
+	padding: 65px 87px;
+	box-shadow: -6px 4px 36px rgba(0, 0, 0, 0.25);
+	border-radius: 16px;
+	margin-top: 24px;
+	position: relative;
+	max-width: 984px;
+}
+
+.qute {
+  position: absolute;
+}
+
+.qute-1 {
+  left: 15px;
+  top: 25px;
+}
+
+.qute-2 {
+	right: 15px;
+	bottom: 25px;
+}
+
+/*
+==============================
+Join Investors Section End
+=============================
+*/
+
+/*
+==============================
+Oneup Platform Section Start
+=============================
+*/
+
+.oneups-platform-area {
+	background-color: var(--secondery);
+	padding: 96px 0;
+  position: relative;
+}
+
+.oneups-platform-area .shade {
+	z-index: 2;
+}
+
+.container.platform-wrap {
+	max-width: 688px;
+}
+
+.oneups-platform-area .section-title {
+  color: var(--text-white);
+}
+
+.future-platform-box {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	border: 1px solid var(--primary);
+	border-radius: 16px;
+	padding: 16px 34px;
+	margin-top: 16px;
+	margin-bottom: 24px;
+}
+
+.future-icon img {
+	max-width: 78px;
+}
+
+.future-platform-box p {
+	color: var(--text-white);
+	letter-spacing: 0.3px;
+}
+
+/*
+==============================
+Oneup Platform Section End
+=============================
+*/
+
+/*
+==============================
+Oneup Future Section Start
+=============================
+*/
+
+.oneup-future-area {
+	padding-top: 80px;
+	padding-bottom: 47px;
+  position: relative;
+}
+
+.oneup-future-area .section-title {
+  max-width: 685px;
+}
+
+.oneup-future-area .section-title h2 {
+  margin-bottom: 24px;
+}
+
+.bottom-content {
+  margin: 24px 0;
+}
+
+.oneup-future-area .section-title p {
+	font-size: 1.125rem;
+}
+
+.work-bg-area {
+  height: 620px;
+  background-position: center top;
+  background-size: cover;
+  background-color: var(--secondery);
+}
+
+/*
+==============================
+Oneup Future Section End
+=============================
+*/
+
+
+/*
+==========================
+Footer Section Start
+==========================
+*/
+
+.footer-wrapper {
+  background-color: var(--secondery);
+  padding: 74px 0;
+}
+
+.footer-widget p {
+  font-size: 1.125rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-logo {
+  margin-bottom: 32px;
+}
+
+.footer-widget {
+  max-width: 314px;
+}
+
+.footer-sub-title {
+  color: var(--text-white);
+  font-size: 1.5625rem;
+  display: block;
+  margin-bottom: 39px;
+}
+
+.footer-widget ul li {
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-widget ul li a {
+  color: rgba(255, 255, 255, 0.72);
+  display: block;
+}
+
+/*
+==========================
+Footer Section End
+==========================
+*/
+
+
+
+
+
+/*
+============================
+Responsive Style Start
+============================
+*/
+
+@media only screen and (min-width:1320px) {
+  .container {
+    max-width: 1200px;
+  }
+
+}
+
+@media only screen and (max-width:1199px) {
+ 
+
+}
+@media only screen and (max-width:991px) {
+
+}
+@media only screen and (max-width:767px) {
+
+}
+/*
+============================
+Responsive Style End
+============================
+*/
