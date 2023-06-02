@@ -2,15 +2,22 @@
 "use strict";
 
 
+$(document).ready(function() {
+    $('.nav-toggle').click(function(){
+        $('ul').toggleClass('show');
+    })
+    
+});
+
 
 // owlCarousel //
 $('.slider-active').owlCarousel({
     loop:true,
-    margin:0,
+    margin:30,
 	items:1,
     nav:false,
 	dots:false,
-	autoplay:false,
+	autoplay:true,
     responsive:{
         0:{
             items:1

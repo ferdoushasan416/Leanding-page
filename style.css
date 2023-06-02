@@ -88,11 +88,11 @@ h5 {
 }
 
 h1 {
-  font-size: 2.8125rem; /* 45px */
+	font-size: 2.213rem;
 }
 
 h2 {
-  font-size: 2.5rem; /* 28px */
+	font-size: 1.6rem;
 }
 
 h3 {
@@ -309,6 +309,41 @@ Header Section Start
   color: var(--secondary);
 }
 
+.nav-toggle {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin-left: auto;
+  outline: none;
+  cursor: pointer;
+ }
+ 
+ .nav-toggle:before, .nav-toggle:after, .nav-toggle span {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--secondery);
+  display: block;
+ } 
+
+ .nav-toggle:before, .nav-toggle:after {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+ }
+
+ .nav-toggle:after {
+   top: auto;
+   bottom: 2px;
+ }
+
+
 /*
 ============================
 Header Section End
@@ -395,7 +430,7 @@ Investment Section Start
 */
 
 .investment-area {
-  background-color: var(--secondery);
+  background-color: var(--btn-color);
   padding-top: 10px;
   padding-bottom: 30px;
 }
@@ -406,7 +441,6 @@ Investment Section Start
 }
 
 .investment-wrap h2 {
-  /* width: 437px; */
   line-height: 3.4375rem;
   margin-bottom: 24px;
 }
@@ -790,16 +824,223 @@ Responsive Style Start
 
 }
 
-@media only screen and (max-width:1199px) {
- 
-
-}
 @media only screen and (max-width:991px) {
 
+.banner-text h1 {
+  line-height: 2.938rem;
+  margin-bottom: 20px;
 }
-@media only screen and (max-width:767px) {
+
+.banner-text p {
+  color: var(--text-white);
+  font-size: 1.125rem;
+  line-height: 28.31px;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+  max-width: 553px;
+}
+
+.banner-bg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: var(--secondary);
+	padding-top: 120px;
+	padding-bottom: 200px;
+}
+
+.site-btn {
+	font-size: 1rem;
+	padding: 16px 40px;
+}
+
+.section-title h2 {
+	line-height: 3.138rem;
+	margin-bottom: 20px;
+}
+
+.portfolio-figure img {
+	margin-top: 35px;
+}
+
+.investment-wrap h2 {
+	line-height: 2.4375rem;
+	margin-bottom: 20px;
+}
+
+.oneup-edge-area {
+	padding-bottom: 150px;
+}
+
+.slider-wrapper {
+	padding: 45px 87px;
+}
+
+.shade-1 {
+	left: -20%;
+}
+
+.shade-2 {
+	right: -40px;
+}
+
+.oneup-future-area .section-title {
+	max-width: 588px;
+}
+
+.oneup-future-area .section-title p {
+	font-size: 1rem;
+}
+
+.work-bg-area {
+	height: 545px;
+}
+
+.footer-widget, .footer-widget p  {
+	font-size: 1.025rem;
+}
 
 }
+
+@media only screen and (max-width:767px) {
+
+.nav-toggle {
+  position: relative;
+  z-index: 2;
+}
+
+.main-menu ul {
+  position: absolute;
+  width: 100%;
+  padding-bottom: 100px;
+  left: -999px;
+  background-color: var(--secondary);
+  top: 56px;
+  text-align: center;
+  transition: 0.2s all ease;
+  z-index: 4;
+}
+
+.main-menu ul.show {
+  left: 0;
+}
+
+.main-menu ul .current-menu-item {
+  display: block;
+  margin: 30px 0;
+}
+
+.main-menu ul .current-menu-item a {
+  color: var(--text-white);
+}
+
+.main-menu ul .current-menu-item a:hover {
+  color: var(--primary);
+}
+
+.header-btn-wrapper a {
+  font-size: 16px;
+	padding: 16px 45px;
+}
+
+.header-btn-wrapper a:hover {
+  color: var(--secondery);
+  background-color: var(--text-white);
+}
+
+.banner-bg {
+	padding-top: 100px;
+	padding-bottom: 140px;
+}
+
+.section-title h2 {
+	line-height: 2.138rem;
+}
+
+.oneup-future-area .section-title p {
+	font-size: 1rem;
+}
+
+.shade-wrapper {
+	display: none;
+}
+
+.invest-content-wrap h4 {
+	font-size: 1.3rem;
+	margin-bottom: 10px;
+}
+
+.investing-service-wrap {
+	margin-top: 25px;
+}
+
+.subtitle {
+	font-size: 1rem;
+}
+
+.oneup-edge-area {
+	padding-bottom: 100px;
+}
+
+.join-investors-area {
+	padding-bottom: 80px;
+}
+
+.slider-info {
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.slider-wrapper {
+	padding: 28px 87px;
+}
+
+.slider-items {
+	padding: 10px 12px;
+}
+
+.slider-items p {
+	font-size: 0.875rem;
+  padding-left: 0;
+}
+
+.future-platform-box {
+	align-items: start;
+	gap: 20px;
+	padding: 15px 18px;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.work-bg-area {
+	height: 350px;
+}
+
+.work-bg-area {
+	height: 545px;
+}
+
+.footer-wrapper .container {
+	flex-wrap: wrap;
+}
+
+.footer-widget, .footer-widget p  {
+	font-size: 1.025rem;
+  width: 100%;
+}
+
+.footer-sub-title {
+	font-size: 1.3rem;
+	margin-bottom: 22px;
+}
+
+.footer-widget:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+}
+
+
 /*
 ============================
 Responsive Style End
