@@ -17,7 +17,7 @@ $('.slider-active').owlCarousel({
 	items:1,
     nav:false,
 	dots:false,
-	autoplay:true,
+	autoplay:false,
     responsive:{
         0:{
             items:1

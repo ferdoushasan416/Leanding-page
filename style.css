@@ -245,9 +245,14 @@ ul {
   text-transform: capitalize;
 }
 
+.section-title p {
+	font-size: 1.125rem;
+}
+
 .section-title p span {
 	background-color: #FFD699;
 	padding: 4px;
+	font-weight: 600;
 }
 
 /*
@@ -285,7 +290,7 @@ Header Section Start
 	font-weight: 500;
   padding: 5px 0px;
 	font-size: 1.125rem;
-  color: var(--secondary);
+  color: var(--secondery);
 	transition: 0.3s all ease;
   position: relative;
 }
@@ -301,12 +306,8 @@ Header Section Start
   transition: 0.3s all ease;
 }
 
-.main-menu ul .current-menu-item:hover a:before {
+.main-menu ul .current-menu-item:hover a:before, .main-menu ul .current-menu-item:hover a {
   width: 100%;
-}
-
-.main-menu ul .current-menu-item:hover a {
-  color: var(--secondary);
 }
 
 .nav-toggle {
@@ -409,8 +410,17 @@ Now Working Section Start
   position: relative;
 }
 
+.now-working-area .section-title p {
+	line-height: 1.75rem;
+	margin: 0;
+}
+
 .now-working-area .section-title {
   max-width: 685px;
+}
+
+.portfolio-figure {
+	margin-top: 41px;
 }
 
 .portfolio-figure img {
@@ -465,8 +475,8 @@ Investment Section Start
 	content: "";
 	top: 50%;
 	left: 0;
-	width: 7px;
-	height: 7px;
+	width: 8px;
+	height: 8px;
 	position: absolute;
 	border-radius: 50%;
 	background-color: var(--primary);
@@ -496,13 +506,13 @@ Investing Demand Section Start
 }
 
 .subtitle {
-  font-size: 1.125rem;
-  letter-spacing: 0.3px;
-  font-weight: 600;
-  background-color: var(--primary);
-  padding: 2px 15px 0px 4px;
-  margin-bottom: 24px;
-  display: inline-block;
+	font-size: 1.125rem;
+	letter-spacing: 0.3px;
+	font-weight: 600;
+	background-color: #FFD699;
+	padding: 2px 15px 0px 4px;
+	margin-bottom: 24px;
+	display: inline-block;
 }
 
 .service-box {
@@ -539,7 +549,7 @@ OneUp Edge Section Start
 */
 
 .oneup-edge-area {
-  padding-bottom: 210px;
+  padding-bottom: 150px;
 }
 
 .invest-content-wrap {
@@ -766,8 +776,8 @@ Footer Section Start
 */
 
 .footer-wrapper {
-  background-color: var(--secondery);
-  padding: 74px 0;
+	background-color: #0F1B24;
+	padding: 74px 0;
 }
 
 .footer-widget p {
@@ -799,8 +809,12 @@ Footer Section Start
 .footer-widget ul li a {
   color: rgba(255, 255, 255, 0.72);
   display: block;
+  transition: 0.3s all ease;
 }
 
+.footer-widget ul li:hover a {
+  color: var(--text-white);
+}
 /*
 ==========================
 Footer Section End
@@ -857,6 +871,14 @@ Responsive Style Start
 .section-title h2 {
 	line-height: 3.138rem;
 	margin-bottom: 20px;
+}
+
+.section-title p {
+	font-size: 1rem;
+}
+
+.invest-content p {
+	line-height: 25px;
 }
 
 .portfolio-figure img {
@@ -978,6 +1000,10 @@ Responsive Style Start
 	font-size: 1rem;
 }
 
+.section-title p span {
+	font-weight: 500;
+}
+
 .oneup-edge-area {
 	padding-bottom: 100px;
 }
@@ -987,8 +1013,8 @@ Responsive Style Start
 }
 
 .slider-info {
-  margin-bottom: 15px;
-  flex-direction: column;
+	margin-bottom: 15px;
+	flex-direction: column;
 }
 
 .slider-wrapper {
@@ -1017,7 +1043,7 @@ Responsive Style Start
 }
 
 .work-bg-area {
-	height: 545px;
+	height: 350px;
 }
 
 .footer-wrapper .container {
