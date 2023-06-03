@@ -247,6 +247,7 @@ ul {
 
 .section-title p {
 	font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .section-title p span {
@@ -411,7 +412,6 @@ Now Working Section Start
 }
 
 .now-working-area .section-title p {
-	line-height: 1.75rem;
 	margin: 0;
 }
 
@@ -749,10 +749,6 @@ Oneup Future Section Start
 
 .bottom-content {
   margin: 24px 0;
-}
-
-.oneup-future-area .section-title p {
-	font-size: 1.125rem;
 }
 
 .work-bg-area {
