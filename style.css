@@ -1,5 +1,6 @@
 :root {
   --primary: #FF9800;
+  --yellow: #FFD699;
   --secondery: #2B2B2B;
   --black: #000000;
   --text-white: #fff;
@@ -251,7 +252,7 @@ ul {
 }
 
 .section-title p span {
-	background-color: #FFD699;
+	background-color: var(--yellow);
 	padding: 4px;
 	font-weight: 600;
 }
@@ -390,7 +391,7 @@ Banner Section Start
 
 .banner-btn a:hover {
 	color: var(--primary);
-  background-color: var(--text-white);
+  background-color: var(--white);
 }
 
 /*
@@ -509,7 +510,7 @@ Investing Demand Section Start
 	font-size: 1.125rem;
 	letter-spacing: 0.3px;
 	font-weight: 600;
-	background-color: #FFD699;
+	background-color: var(--yellow);
 	padding: 2px 15px 0px 4px;
 	margin-bottom: 24px;
 	display: inline-block;
@@ -577,11 +578,11 @@ OneUp Edge Section Start
 
 .invest-content-wrap:before {
   content: "";
-  position: absolute;
+  left: 0;
+  top: 0;
   width: 9px;
   height: 100%;
-  left: 0px;
-  top: 0px;
+  position: absolute;
   background: #F6F6F6;
   border-radius: 5px 0px 0px 5px;
 }
@@ -631,7 +632,7 @@ Join Investors Section Start
 }
 
 .slider-items {
-  background-color: var(--text-white);
+  background-color: var(--white);
   padding: 15px 25px;
   border-radius: 5px;
 }
@@ -772,7 +773,7 @@ Footer Section Start
 */
 
 .footer-wrapper {
-	background-color: #0F1B24;
+	background-color: var(--footer-bg-color);
 	padding: 74px 0;
 }
 
@@ -963,16 +964,20 @@ Responsive Style Start
 
 .header-btn-wrapper a:hover {
   color: var(--secondery);
-  background-color: var(--text-white);
+  background-color: var(--white);
 }
 
 .banner-bg {
-	padding-top: 100px;
-	padding-bottom: 140px;
+	padding-top: 50px;
+	padding-bottom: 85px;
 }
 
 .section-title h2 {
 	line-height: 2.138rem;
+}
+
+.section-title h2 br {
+	display: none;
 }
 
 .oneup-future-area .section-title p {
@@ -1002,6 +1007,10 @@ Responsive Style Start
 
 .oneup-edge-area {
 	padding-bottom: 100px;
+}
+
+.invest-content-wrap {
+	flex-direction: column;
 }
 
 .join-investors-area {
