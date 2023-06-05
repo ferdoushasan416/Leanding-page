@@ -272,6 +272,7 @@ Header Section Start
 .main-header {
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
 }
 
 .navbar-inner {
@@ -308,7 +309,7 @@ Header Section Start
   transition: 0.3s all ease;
 }
 
-.main-menu ul .current-menu-item:hover a:before, .main-menu ul .current-menu-item:hover a {
+.main-menu ul .current-menu-item:hover a:before {
   width: 100%;
 }
 
@@ -554,25 +555,31 @@ OneUp Edge Section Start
 }
 
 .invest-content-wrap {
+  display: flex;
   gap: 10px;
 	margin-top: 40px;
   margin-bottom: 60px;
 	padding: 24px 38px;
   border-radius: 5px;
+  cursor: pointer;
   position: relative;
   transition: 0.3s all ease;
 }
 
-.invest-content-wrap:hover.invest-content-wrap {
+.image-figure-wrap.tab-image:not(:first-child) {
+  display: none;
+}
+
+.invest-content-wrap:hover, .invest-content-wrap.active{
   color: #B24D00;
   background-color: #FFF5E6;
 }
 
-.invest-content-wrap:hover.invest-content-wrap span {
+.invest-content-wrap:hover.invest-content-wrap span, .invest-content-wrap.active.invest-content-wrap span {
   color: #B24D00;
 }
 
-.invest-content-wrap:hover.invest-content-wrap:before {
+.invest-content-wrap:hover.invest-content-wrap:before, .invest-content-wrap.active.invest-content-wrap:before {
   background-color: var(--primary);
 }
 
@@ -821,7 +828,6 @@ Footer Section End
 
 
 
-
 /*
 ============================
 Responsive Style Start
@@ -836,7 +842,6 @@ Responsive Style Start
 }
 
 @media only screen and (max-width:991px) {
-
 .banner-text h1 {
   line-height: 2.938rem;
   margin-bottom: 20px;
@@ -931,13 +936,13 @@ Responsive Style Start
 .main-menu ul {
   position: absolute;
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   left: -999px;
   background-color: var(--secondary);
-  top: 56px;
+  top: 100%;
   text-align: center;
   transition: 0.2s all ease;
-  z-index: 4;
+  z-index: 9;
 }
 
 .main-menu ul.show {
