@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 
 //Tab function //
-$('.invest-content-wrap').eq(0).addClass('active')
+$('.invest-content-wrap').eq(0).addClass('active') 
 $('.tab-image').hide()
 $('.tab-image').eq(0).show()
 
@@ -26,7 +26,7 @@ $('.invest-content-wrap').each(function(i){
             $('.tab-image').hide()
             $('.tab-image').eq(i).show()
             
-        }
+        } 
     })
 });
 
